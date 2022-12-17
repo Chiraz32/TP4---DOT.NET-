@@ -21,7 +21,7 @@ namespace WebApplication4.Data
             if (_instance == null)
             {
                 var optionsBuilder = new DbContextOptionsBuilder<UniversityContext>();
-                optionsBuilder.UseSqlite(@"Data Source=C:\Users\dossc\source\repos\tp4\database.db");
+                optionsBuilder.UseSqlite(@"Data Source=..\database.db");
                 _instance = new UniversityContext(optionsBuilder.Options);
             }
             return _instance;
